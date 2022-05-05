@@ -15,7 +15,7 @@ class CreateTrainsTable extends Migration
     {
         Schema::create('trains', function (Blueprint $table) {
             $table->id();
-            $table->string('azienda', 100)->nullable();
+          /*   $table->string('azienda', 100)->nullable();
             $table->string('stazione_di_partenza', 100)->nullable();
             $table->string('stazione_di_arrivo', 100)->nullable();
             $table->string('azienda', 100)->nullable()->nullable();
@@ -24,7 +24,7 @@ class CreateTrainsTable extends Migration
             $table->string('codice_treno', 100)->nullable();
             $table->integer('numero_carrozze')->nullable();	
             $table->boolean('in_orario')->nullable();
-            $table->boolean('cancellato')->nullable();
+            $table->boolean('cancellato')->nullable(); */
             $table->timestamps();
         });
     }
