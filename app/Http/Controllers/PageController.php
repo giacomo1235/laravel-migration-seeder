@@ -9,7 +9,7 @@ use App\Train;
 class PageController extends Controller
 {
     public function index() {
-        $trainsList = Train::all();
+        $trainsList = Train::paginate(100);
         /* where(
             ['orario_di_partenza', 'like', '2022%']
         )->get(); */

@@ -12,4 +12,6 @@
             </li>
         @endforeach
     </ul>
+
+    {{ $trainsList->links() }}
 @endsection
