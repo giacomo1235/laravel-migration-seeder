@@ -23,8 +23,8 @@ class TrainSeeder extends Seeder
                 'orario_di_arrivo' => '2022-05-05 19:19:19',
                 'codice_treno' => 'fuvhfklvwfv',
                 'numero_carrozze' => '9',
-                'in_orario'	=> 'false',
-                'cancellato'=> 'true'
+                'in_orario'	=> false,
+                'cancellato'=> true
             ],
             [
                 'azienda'	=> 'Italo',
@@ -34,8 +34,8 @@ class TrainSeeder extends Seeder
                 'orario_di_arrivo' => '2022-05-05 21:21:21',
                 'codice_treno' => 'jdhcvbljscb ',
                 'numero_carrozze' => '8',
-                'in_orario'	=> 'false',
-                'cancellato'=> 'true'
+                'in_orario'	=> false,
+                'cancellato'=> true
             ],
             [
                 'azienda'	=> 'Trenord',
@@ -45,8 +45,8 @@ class TrainSeeder extends Seeder
                 'orario_di_arrivo' => '1995-11-19 20:20:20',
                 'codice_treno' => 'dkjcs;aslsa',
                 'numero_carrozze' => '7',
-                'in_orario'	=> 'false',
-                'cancellato'=> 'true'
+                'in_orario'	=> false,
+                'cancellato'=> true
             ],
         ];
 
@@ -67,12 +67,12 @@ class TrainSeeder extends Seeder
 
         for ($i = 1; $i < 500; $i++) {
             $trainData = [
-                'azienda'                => $faker->varchar(100),
-                'stazione_di_partenza'   => $faker->varchar(100),
-                'stazione_di_arrivo'     => $faker->varchar(100),
-                'orario_di_partenza'     => $faker->datetime(),
-                'orario_di_arrivo'       => $faker->datetime(),
-                'codice_treno'           => $faker->varchar(100),
+                'azienda'                => $faker->text(),
+                'stazione_di_partenza'   => $faker->text(),
+                'stazione_di_arrivo'     => $faker->text(),
+                'orario_di_partenza'     => $faker->date(),
+                'orario_di_arrivo'       => $faker->date(),
+                'codice_treno'           => $faker->text(),
                 'numero_carrozze'        => $faker->int(11),
                 'in_orario'              => $faker->boolean(),
                 'cancellato'             => $faker->boolean()

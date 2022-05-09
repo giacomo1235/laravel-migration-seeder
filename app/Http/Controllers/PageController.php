@@ -11,7 +11,7 @@ class PageController extends Controller
     public function index() {
         $trainsList = Train::paginate(100);
         /* where(
-            ['orario_di_partenza', 'like', '2022%']
+            ['orario_di_partenza', 'like', date()]
         )->get(); */
         return view('index', compact('trainsList'));
     }
