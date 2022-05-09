@@ -66,7 +66,7 @@ class TrainSeeder extends Seeder
         }
 
         for ($i = 1; $i < 500; $i++) {
-            $houseData = [
+            $trainData = [
                 'azienda'                => $faker->varchar(100),
                 'stazione_di_partenza'   => $faker->varchar(100),
                 'stazione_di_arrivo'     => $faker->varchar(100),
